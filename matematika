@@ -1,0 +1,26 @@
+echo -e "\e[34mKuis Matematika\e[0m";
+echo -e "Jawab pertanyaan dibawah ini";
+read -p '5+5 =' userinput1;
+#
+if [ "${userinput1:-}" = "10" ]
+then
+	echo -e "\e[92mBENAR ☑️\e[0m";
+fi
+if [ "${userinput1:-}" != "10" ]
+then
+	echo -e "\e[91mSALAH 🚫\e[0m";
+fi
+if [ "${userinput1:-}" = "10" ]
+then
+	echo -e "LANJUT KE PERTANYAAN BERIKUTNYA.";
+fi
+read -p '10+5-5+5x2 =' userinput2;
+#
+if [ "${userinput2:-}" = "30" ]
+then
+	echo -e "\e[92mBENAR ☑️\e[0m";
+fi
+if [ "${userinput2:-}" != "30" ]
+then
+	echo -e "\e[91mSALAH 🚫\e[0m";
+fi
